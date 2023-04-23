@@ -34,7 +34,7 @@ const Navbar = () => {
               Products
             </li>
             <li className="text-xl text-sky-600 font-bold cursor-pointer hover:text-sky-700">
-              Industries
+              <Link href="/industries">Industries</Link>
             </li>
             <li className="text-xl text-sky-600 font-bold cursor-pointer hover:text-sky-700">
               Why Choose Us

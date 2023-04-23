@@ -121,7 +121,7 @@ const Contact = () => {
     },
     {
       id: 16,
-      title: "Phosphoric Acid",
+      title: "Acetone",
     },
     {
       id: 17,
