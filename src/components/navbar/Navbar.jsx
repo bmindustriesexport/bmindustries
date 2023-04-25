@@ -15,13 +15,15 @@ const Navbar = () => {
   return (
     <div className="relative">
       <div className="flex items-center ">
-        <Image
-          src="/logo.png"
-          alt="logo"
-          width={70}
-          height={70}
-          className="ml-2 lg:w-20"
-        />
+        <div className="w-[10%]">
+          <Image
+            src="/logo.png"
+            alt="logo"
+            width={70}
+            height={70}
+            className="ml-2 lg:w-20"
+          />
+        </div>
         <nav className="w-full">
           <ul className="hidden lg:flex items-start justify-center gap-6">
             <li className="text-xl text-sky-600 font-bold cursor-pointer hover:text-sky-700">
@@ -31,7 +33,7 @@ const Navbar = () => {
               About Us
             </li>
             <li className="text-xl text-sky-600 font-bold cursor-pointer hover:text-sky-700">
-              Products
+              <Link href="/products">Products</Link>
             </li>
             <li className="text-xl text-sky-600 font-bold cursor-pointer hover:text-sky-700">
               <Link href="/industries">Industries</Link>

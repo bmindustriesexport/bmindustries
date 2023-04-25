@@ -94,6 +94,16 @@ const Industries = () => {
               sizes="100vw"
             />
           </div>
+          <div className="h-[320px]">
+            <Image
+              className="h-[100%] w-full object-cover"
+              src="/carousel3.jpg"
+              alt=""
+              width={0}
+              height={0}
+              sizes="100vw"
+            />
+          </div>
         </Slider>
       </div>
 

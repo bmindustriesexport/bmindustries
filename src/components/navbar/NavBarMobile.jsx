@@ -22,7 +22,15 @@ const NavBarMobile = ({ setShowNavBar, showNavBar }) => {
         </li>
         <hr />
         <li className="text-2xl p-5 text-sky-600 font-bold cursor-pointer underline">
-          Products
+          <Link
+            href="/products"
+            onClick={(e) => {
+              e.stopPropagation();
+              setShowNavBar(false);
+            }}
+          >
+            Products
+          </Link>
         </li>
         <hr />
         <li className="text-2xl p-5 text-sky-600 font-bold cursor-pointer underline">
