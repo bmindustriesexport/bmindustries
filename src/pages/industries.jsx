@@ -2,7 +2,6 @@ import Head from "next/head";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import IndustriesImages from "@/components/industriesImages/IndustriesImages";

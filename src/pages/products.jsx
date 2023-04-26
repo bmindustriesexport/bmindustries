@@ -1,10 +1,15 @@
-import ProductData from "@/components/productData";
+import ProductData from "@/components/products/productData";
 import Head from "next/head";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Products = () => {
   const [openAccordions, setOpenAccordions] = useState([]);
   const [openAccordionsAnimation, setOpenAccordionsAnimation] = useState([]);
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    setLoaded(true);
+  }, []);
   const productsData = [
     {
       id: 1,
@@ -278,9 +283,18 @@ const Products = () => {
     <>
       <Head>
         <title>Products</title>
+        <style>
+          {`
+            .animate-h1 {
+              opacity: ${loaded ? "5" : "0"};
+              transform: translateY(${loaded ? "0" : "50px"});
+              transition: opacity 1s ease-out, transform 1s linear;
+            }
+          `}
+        </style>
       </Head>
       <div>
-        <h1 className="text-sky-600 font-bold text-3xl text-center p-4 mt-1">
+        <h1 className="text-sky-600 font-bold text-3xl text-center p-4 mt-1 animate-h1">
           Products
         </h1>
 

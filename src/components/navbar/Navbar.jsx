@@ -22,6 +22,7 @@ const Navbar = () => {
             width={70}
             height={70}
             className="ml-2 lg:w-20"
+            priority={true}
           />
         </div>
         <nav className="w-full">
