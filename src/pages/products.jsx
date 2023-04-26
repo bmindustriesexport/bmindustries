@@ -1,12 +1,10 @@
 import ProductData from "@/components/productData";
 import Head from "next/head";
-import Link from "next/link";
 import { useState } from "react";
-import { AiFillPlusCircle, AiFillMinusCircle } from "react-icons/ai";
-import { FaFilePdf } from "react-icons/fa";
 
 const Products = () => {
-  const [fadeOut, setFadeOut] = useState(false);
+  const [openAccordions, setOpenAccordions] = useState([]);
+  const [openAccordionsAnimation, setOpenAccordionsAnimation] = useState([]);
   const productsData = [
     {
       id: 1,
@@ -52,7 +50,7 @@ const Products = () => {
       title: "Hydrogen Peroxide",
       Synonyms: "Hydroperoxide, Hydrogen Dioxide",
       Formula: "H<sub>2</sub>O<sub>2</sub>",
-      CAS_NO: "7 7722-84-1",
+      CAS_NO: "7722-84-1",
       Packaging: "Jerry Cans and IBC",
       Application:
         "Hydrogen peroxide (H2O2) is a pale blue liquid with strong oxidizing properties.One of its main uses is as a bleaching agent for textiles and paper. It is also used as a disinfectant and antiseptic in the healthcare industry, as well as in the production of personal care products such as toothpaste and mouthwash.Additionally, it is used to improve oil recovery in the petroleum industry and  is also used in the extraction and finishing of metals.",
@@ -170,77 +168,136 @@ const Products = () => {
       CAS_NO: "1310-73-2",
       Packaging: "20/50 Kg HDPE Bags with inner HM-HDPE Line",
       Application:
-        " Caustic soda flakes are widely used in small-scale industries. They are used to make soap, cleaning agents, and remove impurities in textiles and crude oil refining. Their strong alkaline nature makes them effective for removing dirt and grease.They are also used in the production of synthetic fibers. In the petroleum industry, caustic soda flakes are used to refine crude oil and remove impurities.",
+        "Caustic soda flakes are widely used in small-scale industries. They are used to make soap, cleaning agents, and remove impurities in textiles and crude oil refining. Their strong alkaline nature makes them effective for removing dirt and grease.They are also used in the production of synthetic fibers. In the petroleum industry, caustic soda flakes are used to refine crude oil and remove impurities.",
+      pdf_title: "PDF TITLE",
+      pdf_link: "/test.pdf",
+    },
+    {
+      id: 15,
+      title: "Caustic Soda Lye",
+      Synonyms: "White caustic solution , Sodium hydrate solution",
+      Formula: "NaOH",
+      CAS_NO: "1310-73-2",
+      Packaging: "In Tanker load",
+      Application:
+        "Caustic soda lye is used in various industries, including soap and cleaning agents, pulp and paper, textiles, and water treatment. It is also used in food processing and the production of chemicals like detergents, bleach, and pharmaceuticals.",
+      pdf_title: "PDF TITLE",
+      pdf_link: "/test.pdf",
+    },
+    {
+      id: 16,
+      title: "Ortho Dichloro Benzene (ODCB)",
+      Synonyms: "Ortho - Dichlorobenzol , 1,2 - dichlorobenzene",
+      Formula: "C<sub>6</sub>H<sub>4</sub>Cl<sub>2</sub>",
+      CAS_NO: "95-50-1",
+      Packaging: "ISO Container, 250 Kgs GI Drums / Road Tanker",
+      Application:
+        " Ortho-dichlorobenzene (ODCB) is used as a pesticide, fumigant, solvent, and ingredient in various products such as adhesives, cleaners, and air fresheners. It is also used in the production of dyes, pharmaceuticals, and synthetic resins due to its high stability and low volatility.",
+      pdf_title: "PDF TITLE",
+      pdf_link: "/test.pdf",
+    },
+    {
+      id: 17,
+      title: "Mineral Turpentine Oil (MTO)",
+      Synonyms: "White Spirit , Petroleum Spirits",
+      CAS_NO: "8006-64-2",
+      Packaging: "MS Drums(210 liter), ISO Tank and Bulk",
+      Application:
+        "Mineral turpentine oil is a versatile solvent used for thinning paints and varnishes, cleaning machinery and tools, producing chemicals, and manufacturing rubber and textiles. It can also be used as a fuel.",
+      pdf_title: "PDF TITLE",
+      pdf_link: "/test.pdf",
+    },
+    {
+      id: 18,
+      title: "Di Ethyl Glycol (DEG)",
+      Synonyms: "Diethyl Carbinol , 2,2'-Oxydiethanol",
+      Formula: "C<sub>4</sub>H<sub>10</sub>O<sub>3</sub>",
+      CAS_NO: "111-46-6",
+      Packaging: "MS Drums/plastic drums(210 liter), ISO Tank and Bulk",
+      Application:
+        "Di Ethyl Glycol (DEG) is a versatile chemical used as a solvent for resins, dyes, and oils, as a coupling agent in water-based coatings and inks, and as a component in antifreeze and heat transfer fluids. It is also used in the production of  lubricants, surfactants, and polyester resins, and among other applications.",
+      pdf_title: "PDF TITLE",
+      pdf_link: "/test.pdf",
+    },
+    {
+      id: 19,
+      title: "Mono Ethyl Glycol (MEG)",
+      Synonyms: "1,2-ethanediol or 1,2-Dihydroxyethane",
+      Formula: "C<sub>2</sub>H<sub>6</sub>O<sub>2</sub>",
+      CAS_NO: "107-21-1",
+      Packaging: "MS Drums/plastic drums(210 liter), ISO Tank and Bulk",
+      Application:
+        "Mono Ethyl Glycol (MEG) is a versatile chemical used as a raw material in the production of polyester fibers and resins, as a solvent for paints and coatings, and in the production of antifreeze and coolants for automobiles. It is also used in the production of detergents, cosmetics, and pharmaceuticals.",
+      pdf_title: "PDF TITLE",
+      pdf_link: "/test.pdf",
+    },
+    {
+      id: 20,
+      title: "Mixed Aromatic Chemical",
+      data: "We can formulate Mixed Aromatic Chemical as per your required proportions of solvents. Examples of Mixed Aromatic Chemical are Slow Drying Mixed Aromatic Chemical , Fast Drying Mixed Aromatic Chemical . Please share with us your proportions or share COA & MSDS for us to get back to you with the same. If you would like to discuss further please contact us.",
+      pdf_title: "PDF TITLE",
+      pdf_link: "/test.pdf",
+    },
+    {
+      id: 21,
+      title: "Methylene Chloride",
+      Synonyms: "Methylene dichloride, Refrigerant-30, Freon-30, R-30, DCM",
+      Formula: "CH<sub>2</sub>Cl<sub>2",
+      CAS_NO: "75-09-2",
+      Packaging: "MS Drums, ISO Tank and Bulk",
+      Application:
+        "-Methylene chloride is a colorless,  versatile solvent used in adhesives, paint, chemical processing, pharmaceuticals, metal cleaning, and as a propellant in aerosols and a blowing agent in the production of polyurethane foams.",
       pdf_title: "PDF TITLE",
       pdf_link: "/test.pdf",
     },
   ];
 
+  const toggleAccordionAnimationHandler = (index) => {
+    if (openAccordionsAnimation.includes(index)) {
+      setOpenAccordionsAnimation((prev) =>
+        prev.filter(
+          (singleOpenAccordionIndex) => singleOpenAccordionIndex !== index
+        )
+      );
+    } else {
+      setOpenAccordionsAnimation([...openAccordionsAnimation, index]);
+      setOpenAccordions([...openAccordions, index]);
+    }
+  };
+
+  const toggleAccordionHandler = (index) => {
+    if (openAccordions.includes(index)) {
+      setOpenAccordions((prev) =>
+        prev.filter(
+          (singleOpenAccordionIndex) => singleOpenAccordionIndex !== index
+        )
+      );
+    }
+  };
   return (
     <>
       <Head>
         <title>Products</title>
-        <style>{`
-          .content {
-            opacity: 0;
-            animation: ${fadeOut ? "fade-out" : "fade-in"} 0.5s ease forwards;
-          }
-
-          @keyframes fade-in {
-            0% {
-              opacity: 0;
-              transform: translateY(-50%);
-            }
-            50% {
-              opacity: 0;
-            }
-            100% {
-              opacity: 1;
-              transform: translateY(0);
-            }
-          }
-
-        .plusBtn{
-            transform: rotate(360deg);
-            transition: 1s;
-            }
-
-          @keyframes fade-out {
-            0% {
-              opacity: 1;
-              transform: translateY(0);
-            }
-            50% {
-              opacity: 0;
-            }
-            100% {
-              opacity: 0;
-              transform: translateY(-50%);
-            }
-          }
-
- 
-        `}</style>
       </Head>
       <div>
         <h1 className="text-sky-600 font-bold text-3xl text-center p-4 mt-1">
           Products
         </h1>
-        {/* <ProductsData
-          handleOpenContent={handleOpenContent}
-          openContent={openContent}
-          fadeOut={fadeOut}
-        /> */}
 
         {productsData.map((product, index) => {
           return (
-            <ProductData
-              product={product}
-              key={product.id}
-              fadeOut={fadeOut}
-              setFadeOut={setFadeOut}
-              mapIndex={index}
-            />
+            <div key={product.id} className="mb-4">
+              <ProductData
+                product={product}
+                mapIndex={index}
+                toggleAccordionAnimationHandler={
+                  toggleAccordionAnimationHandler
+                }
+                openAccordions={openAccordions}
+                openAccordionsAnimation={openAccordionsAnimation}
+                toggleAccordionHandler={toggleAccordionHandler}
+              />
+            </div>
           );
         })}
       </div>

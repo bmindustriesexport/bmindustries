@@ -7,3 +7,50 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
+
+.content-fade-in {
+  /* opacity: 0; */
+  animation: fade-in ease-in-out 500ms;
+}
+
+.content-fade-out {
+  animation: fade-out ease-in-out 300ms;
+}
+
+@keyframes fade-in {
+  0% {
+    /* transform-origin: top; */
+    opacity: 0;
+    /* transform: scaleY(0); */
+    max-height: 0%;
+  }
+  100% {
+    /* transform-origin: top; */
+    opacity: 1;
+    max-height: 100%;
+    /* transform: scaleY(1); */
+  }
+}
+
+.plusBtn {
+  /* transform: rotate(360deg); */
+  transition: 1s;
+}
+
+@keyframes fade-out {
+  0% {
+    /* transform-origin: top; */
+    opacity: 1;
+    max-height: 100%;
+    /* transform: scaleY(1); */
+  }
+  /* 50% {
+    opacity: 0;
+  } */
+  100% {
+    /* transform-origin: top; */
+    opacity: 0;
+    max-height: 0%;
+    /* transform: scaleY(0); */
+  }
+}

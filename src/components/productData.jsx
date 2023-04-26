@@ -3,72 +3,84 @@ import React, { useState } from "react";
 import { AiFillMinusCircle, AiFillPlusCircle } from "react-icons/ai";
 import { FaFilePdf } from "react-icons/fa";
 
-const ProductData = ({ product, fadeOut, setFadeOut }) => {
-  const [openContent, setOpenContent] = useState(false);
-
-  const handleOpenContent = () => {
-    if (openContent) {
-      // fade out before setting openContent to false
-      setFadeOut(true);
-      setTimeout(() => {
-        setOpenContent(false);
-        setFadeOut(false);
-      }, 100); // delay 0.5s for the animation to complete
-    } else {
-      setOpenContent(true);
-    }
-  };
+const ProductData = ({
+  product,
+  toggleAccordionAnimationHandler,
+  mapIndex,
+  openAccordions,
+  openAccordionsAnimation,
+  toggleAccordionHandler,
+}) => {
   return (
     <>
       <div
         key={product.id}
-        onClick={handleOpenContent}
-        className={
-          openContent
-            ? "flex p-2 w-[90%] m-auto transition items-center gap-1 bg-sky-700 rounded-t-md cursor-pointer mt-5"
-            : "flex p-2 w-[90%] m-auto transition items-center  bg-slate-200 gap-1 rounded cursor-pointer mt-5"
-        }
+        onClick={() => toggleAccordionAnimationHandler(mapIndex)}
+        className={`flex w-[90%] m-auto  items-center mt-5 cursor-pointer`}
       >
-        {openContent ? (
-          <AiFillMinusCircle
-            className={
-              openContent
-                ? "text-white transition text-lg"
-                : "text-slate-600 transition text-lg"
-            }
-          />
-        ) : (
-          <AiFillPlusCircle
-            className={
-              openContent
-                ? "text-white transition text-lg"
-                : "text-slate-600 transition text-lg"
-            }
-          />
-        )}
-
-        <h2
-          className={
-            openContent ? "text-white text-lg" : "text-slate-600 text-lg"
-          }
+        <div
+          className={`flex p-3 items-center gap-1  rounded-t-md  cursor-pointer w-full ${
+            openAccordionsAnimation.includes(mapIndex)
+              ? " bg-sky-700"
+              : "bg-slate-200 rounded-md"
+          }`}
         >
-          {product.title}
-        </h2>
+          {openAccordionsAnimation.includes(mapIndex) ? (
+            <AiFillMinusCircle
+              className={
+                openAccordionsAnimation.includes(mapIndex)
+                  ? "text-white  text-lg"
+                  : "text-slate-600  text-lg"
+              }
+            />
+          ) : (
+            <AiFillPlusCircle
+              className={
+                openAccordionsAnimation.includes(mapIndex)
+                  ? "text-white  text-lg"
+                  : "text-slate-600  text-lg"
+              }
+            />
+          )}
+
+          <h2
+            className={
+              openAccordionsAnimation.includes(mapIndex)
+                ? "text-white text-lg"
+                : "text-slate-600 text-lg"
+            }
+          >
+            {product.title}
+          </h2>
+        </div>
       </div>
-      {openContent ? (
+      {openAccordions.includes(mapIndex) ? (
         product.data ? (
           <div
-            className={`flex flex-col content w-[90%] m-auto p-2 border-l border-r border-b rounded-b ${
-              fadeOut ? "fade-out" : "fade-in"
-            }`}
+            className={`flex flex-col ${
+              openAccordionsAnimation.includes(mapIndex)
+                ? "content-fade-in"
+                : "content-fade-out"
+            } w-[90%] m-auto p-2 transition duration-500 border-l border-r border-b rounded-b `}
+            onAnimationEnd={() => {
+              !openAccordionsAnimation.includes(mapIndex) &&
+                toggleAccordionHandler(mapIndex);
+            }}
           >
+            {console.log("object")}
             <span className="text-lg">{product.data}</span>
           </div>
         ) : (
           <div
-            className={`flex flex-col content w-[90%] m-auto p-2 border-l border-r border-b rounded-b ${
-              fadeOut ? "fade-out" : "fade-in"
-            }`}
+            className={`flex flex-col ${
+              openAccordionsAnimation.includes(mapIndex)
+                ? "content-fade-in"
+                : "content-fade-out"
+            } w-[90%] m-auto p-2 border-l transition duration-500 border-r border-b rounded-b `}
+            onAnimationEnd={() => {
+              !openAccordionsAnimation.includes(mapIndex) &&
+                toggleAccordionHandler(mapIndex);
+            }}
           >
             <div className="flex flex-col">
               <span className="mt-1">
