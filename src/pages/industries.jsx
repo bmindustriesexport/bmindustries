@@ -56,6 +56,8 @@ const Industries = () => {
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    autoplay: true, // Add this option to enable autoplay
+    autoplaySpeed: 2000, // Adjust the speed (in milliseconds) as desired
   };
   return (
     <>

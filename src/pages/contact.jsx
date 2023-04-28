@@ -152,6 +152,10 @@ const Contact = () => {
     },
     {
       id: 22,
+      title: "Hydrochloric acid (HCl)",
+    },
+    {
+      id: 23,
       title: "Others",
     },
   ];
