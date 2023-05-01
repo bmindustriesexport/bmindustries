@@ -261,7 +261,7 @@ const Products = () => {
       CAS_NO: "7647-01-0",
       Packaging: "MS Rubber - Lined Road Tankers , 250 Kg HDPE Barrels",
       Application:
-        "Hydrochloric acid (HCl) is a highly versatile chemical with numerous industrial, laboratory, and medical applications. It is used for pickling and cleaning metals, refining ores, producing chemicals, and as a catalyst.  In laboratories, it is used for analysis and cleaning equipment. It is also used in water treatment, food production, and as a cleaning agent for swimming pools.    v",
+        "Hydrochloric acid (HCl) is a highly versatile chemical with numerous industrial, laboratory, and medical applications. It is used for pickling and cleaning metals, refining ores, producing chemicals, and as a catalyst.  In laboratories, it is used for analysis and cleaning equipment. It is also used in water treatment, food production, and as a cleaning agent for swimming pools.",
       pdf_title: "Hydrochloric Acid (HCl) CAO",
       pdf_link: "/productsPdf/hydrochloricAcid(HCL).pdf",
     },
