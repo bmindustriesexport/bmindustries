@@ -221,8 +221,8 @@ const Products = () => {
       Packaging: "MS Drums/plastic drums(210 liter), ISO Tank and Bulk",
       Application:
         "Di Ethyl Glycol (DEG) is a versatile chemical used as a solvent for resins, dyes, and oils, as a coupling agent in water-based coatings and inks, and as a component in antifreeze and heat transfer fluids. It is also used in the production of  lubricants, surfactants, and polyester resins, and among other applications.",
-      pdf_title: "PDF TITLE",
-      pdf_link: "/test.pdf",
+      pdf_title: "Di Ethyl Glycol (DEG) CAO",
+      pdf_link: "/productsPdf/diEthylGlycol(DEG).pdf",
     },
     {
       id: 19,
@@ -233,15 +233,13 @@ const Products = () => {
       Packaging: "MS Drums/plastic drums(210 liter), ISO Tank and Bulk",
       Application:
         "Mono Ethyl Glycol (MEG) is a versatile chemical used as a raw material in the production of polyester fibers and resins, as a solvent for paints and coatings, and in the production of antifreeze and coolants for automobiles. It is also used in the production of detergents, cosmetics, and pharmaceuticals.",
-      pdf_title: "PDF TITLE",
-      pdf_link: "/test.pdf",
+      pdf_title: "Mono Ethyl Glycol (MEG) CAO",
+      pdf_link: "/productsPdf/monoEthylGlycol(MEG).pdf",
     },
     {
       id: 20,
       title: "Mixed Aromatic Chemical",
       data: "We can formulate Mixed Aromatic Chemical as per your required proportions of solvents. Examples of Mixed Aromatic Chemical are Slow Drying Mixed Aromatic Chemical , Fast Drying Mixed Aromatic Chemical . Please share with us your proportions or share COA & MSDS for us to get back to you with the same. If you would like to discuss further please contact us.",
-      pdf_title: "PDF TITLE",
-      pdf_link: "/test.pdf",
     },
     {
       id: 21,
@@ -252,8 +250,8 @@ const Products = () => {
       Packaging: "MS Drums, ISO Tank and Bulk",
       Application:
         "-Methylene chloride is a colorless,  versatile solvent used in adhesives, paint, chemical processing, pharmaceuticals, metal cleaning, and as a propellant in aerosols and a blowing agent in the production of polyurethane foams.",
-      pdf_title: "PDF TITLE",
-      pdf_link: "/test.pdf",
+      pdf_title: "Methylene Chloride CAO",
+      pdf_link: "/productsPdf/methyleneChloride.pdf",
     },
     {
       id: 22,
@@ -264,8 +262,8 @@ const Products = () => {
       Packaging: "MS Drums, ISO Tank and Bulk",
       Application:
         "-Methylene chloride is a colorless,  versatile solvent used in adhesives, paint, chemical processing, pharmaceuticals, metal cleaning, and as a propellant in aerosols and a blowing agent in the production of polyurethane foams.",
-      pdf_title: "PDF TITLE",
-      pdf_link: "/test.pdf",
+      pdf_title: "Hydrochloric Acid (HCl) CAO",
+      pdf_link: "/productsPdf/hydrochloricAcid(HCL).pdf",
     },
   ];
 

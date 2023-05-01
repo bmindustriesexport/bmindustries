@@ -71,6 +71,7 @@ const Industries = () => {
             }
           `}
         </style>
+        <title>Industries</title>
       </Head>
 
       <div className="m-auto w-full h-full">
