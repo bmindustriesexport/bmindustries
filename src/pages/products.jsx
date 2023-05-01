@@ -256,12 +256,12 @@ const Products = () => {
     {
       id: 22,
       title: "Hydrochloric Acid (HCl)",
-      Synonyms: "Methylene dichloride, Refrigerant-30, Freon-30, R-30, DCM",
+      Synonyms: "Hydrogen Chloride ,  Muriatic Acid , Hydrochloride ",
       Formula: "HCl",
-      CAS_NO: "75-09-2",
-      Packaging: "MS Drums, ISO Tank and Bulk",
+      CAS_NO: "7647-01-0",
+      Packaging: "MS Rubber - Lined Road Tankers , 250 Kg HDPE Barrels",
       Application:
-        "-Methylene chloride is a colorless,  versatile solvent used in adhesives, paint, chemical processing, pharmaceuticals, metal cleaning, and as a propellant in aerosols and a blowing agent in the production of polyurethane foams.",
+        "Hydrochloric acid (HCl) is a highly versatile chemical with numerous industrial, laboratory, and medical applications. It is used for pickling and cleaning metals, refining ores, producing chemicals, and as a catalyst.  In laboratories, it is used for analysis and cleaning equipment. It is also used in water treatment, food production, and as a cleaning agent for swimming pools.    v",
       pdf_title: "Hydrochloric Acid (HCl) CAO",
       pdf_link: "/productsPdf/hydrochloricAcid(HCL).pdf",
     },
