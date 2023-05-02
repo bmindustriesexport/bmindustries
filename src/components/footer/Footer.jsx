@@ -1,0 +1,96 @@
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import { AiOutlineMail } from "react-icons/ai";
+import { BiPhoneCall } from "react-icons/bi";
+
+const Footer = () => {
+  return (
+    <>
+      <Head>
+        <style>
+          {`footer {
+  box-shadow: 0 -5px 5px -5px rgba(0, 0, 0, 0.3);
+}`}
+        </style>
+      </Head>
+      <footer className="w-full shadow-top-lg flex justify-center items-center p-2 flex-col text-sky-600 md:flex-row md:pl-10 md:pr-10 md:gap-[7%] mt-5">
+        <div>
+          <Link href={"/"}>
+            <Image
+              src="/logo.png"
+              alt="logo"
+              width={90}
+              height={90}
+              className="ml-2 md:w-[120px]"
+              priority={true}
+            />
+          </Link>
+        </div>
+        <hr className="w-full mt-[10px] md:hidden" />
+        <div className="flex flex-col items-center gap-[2px] mt-2">
+          <h1 className=" text-2xl font-bold mb-1">Links</h1>
+          <Link className=" text-lg uppercase" href="/">
+            Home
+          </Link>
+          <Link className=" text-lg uppercase" href="/">
+            About Us
+          </Link>
+          <Link className=" text-lg uppercase" href="/products">
+            Products
+          </Link>
+          <Link className=" text-lg uppercase" href="/industries">
+            Industries
+          </Link>
+          <Link className=" text-lg uppercase" href="/">
+            Why choose us
+          </Link>
+          <Link className=" text-lg uppercase" href="/contact">
+            Contact Us
+          </Link>
+        </div>
+        <hr className="w-full m-[10px] md:hidden" />
+        <div className="flex flex-col items-center justify-center w-[80%] lg:w-[30%]">
+          <h1 className="text-2xl font-bold">Contact Us</h1>
+          <p className="text-center">
+            New Block No. 70, Lalji Wado, Nr Zanu Patiya, Bhuvaldi, Ahmedabad
+            -382430 , Gujarat , India
+          </p>
+          <div className="flex mt-[10px] flex-col">
+            <Link href="tel:+917574842044">
+              <div className="flex items-center cursor-pointer">
+                <BiPhoneCall className="text-xl mr-1" />{" "}
+                <span className="text-lg">+917574842044</span>
+              </div>
+            </Link>
+            <Link href="tel:+918128594909">
+              <div className="flex items-center cursor-pointer">
+                <BiPhoneCall className="text-xl mr-1" />{" "}
+                <span className="text-lg">+918128594909</span>
+              </div>
+            </Link>
+          </div>
+          <Link href="mailto:bmindustriesexport@gmail.com">
+            <div className="flex items-center">
+              <AiOutlineMail className="text-xl mr-1" />{" "}
+              <span className="text-[1.1rem]">
+                bmindustriesexport@gmail.com
+              </span>
+            </div>
+          </Link>
+          <Link href="/contact">
+            <button className="border-2 border-sky-600 px-3 m-1 text-base rounded-[30px]">
+              Enquire Now
+            </button>
+          </Link>
+        </div>
+      </footer>
+      <hr className="w-full m-[10px] md:hidden" />
+      <div className="uppercase text-xl flex flex-col items-center text-sky-600 mb-5">
+        <p>&copy;Bm Industries</p>
+      </div>
+    </>
+  );
+};
+
+export default Footer;

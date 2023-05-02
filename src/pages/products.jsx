@@ -34,7 +34,7 @@ const Products = () => {
       Packaging: "MS Drums, ISO Tank and Bulk",
       Application:
         "Chloroform is a colorless, heavy,  liquid that has a wide range of applications.It is used to dissolve fats, oils, and resins in the production of pharmaceuticals, pesticides, and other chemicals. It is also used as a starting material in the manufacture of refrigerants,  as a fumigant for stored grains to control pests ,  and in the production of dyes, perfumes, and explosives.",
-      pdf_title: "chloroform COA",
+      pdf_title: "Chloroform COA",
       pdf_link: "/productsPdf/chloroform.pdf",
     },
     {
@@ -47,7 +47,7 @@ const Products = () => {
       Packaging: "MS Drums/Plastic drum(210 liter), ISO Tank and Bulk",
       Application:
         "Ethyl acetate is a colorless liquid that is commonly used as a solvent in many industries. It is widely used in the production of adhesives, coatings, inks, varnishes, paints, and household products such as nail polish remover. Ethyl acetate is also used as an extraction solvent in the pharmaceutical industry and in the preparation of analytical samples due to its ability to evaporate quickly and leave no residue.",
-      pdf_title: "Ethyl Acetate",
+      pdf_title: "Ethyl Acetate COA",
       pdf_link: "/productsPdf/ethylAcetate.pdf",
     },
     {
@@ -84,7 +84,7 @@ const Products = () => {
       Packaging: "MS Drums, ISO Tank and Bulk",
       Application:
         "One of its primary uses is as a solvent in the production of paints, varnishes, and coatings. It is also commonly used as a solvent in the production of pesticides. Mixed xylene is also an important raw material for the production of various chemicals, such as orthoxylene (phthalic anhydride), metaxylene (isophthalic acid), paraxylene (terephthalic acid), and ethylbenzene (styrene monomer). These chemicals are used in the production of plastics, resins, synthetic fibers, and other materials.",
-      pdf_title: "Mixed Xylene CAO",
+      pdf_title: "Mixed Xylene COA",
       pdf_link: "/productsPdf/mixedXylene.pdf",
     },
     {
@@ -101,7 +101,7 @@ const Products = () => {
       Packaging: "MS Drums, ISO Tank and Bulk",
       Application:
         "Toluene is a solvent widely used in the production of adhesives, rubber, fingernail polish ,and pharmaceuticals. It is also a feedstock in the production of benzene and other chemicals. Toluene is found in consumer products such as gasoline, paints, lacquers, and varnishes. ",
-      pdf_title: "Toluene CAO",
+      pdf_title: "Toluene COA",
       pdf_link: "/productsPdf/toluene.pdf",
     },
     {
@@ -114,7 +114,7 @@ const Products = () => {
       Packaging: "MS Drums(210 liter), ISO Tank and Bulk",
       Application:
         "C9  is widely used as a solvent in various industries such as coatings, adhesives, printing inks, rubber, and chemicals. It is also used as a diluent for resins and as a thinner for paints, varnishes, and coatings.  It has good compatibility with SBR, SIS, SEBS and SEPS and can be used as a pressure sensitive adhesive, hot-melt adhesive and synthetic rubber.",
-      pdf_title: "Solvent C-9 CAO",
+      pdf_title: "Solvent C-9 COA",
       pdf_link: "/productsPdf/solventC-9.pdf",
     },
     {
@@ -161,7 +161,7 @@ const Products = () => {
       Packaging: "200 Liter , 50 Liter , 20 Liter  , 5 Liter , 1 Liter ,500 ml",
       Application:
         "Hand sanitizer is a disinfectant gel or liquid used to clean hands without water or towels. It kills germs, viruses, and bacteria and is used in situations where hand washing is not possible or practical.",
-      pdf_title: "Hand Sanitizer CAO",
+      pdf_title: "Hand Sanitizer COA",
       pdf_link: "/productsPdf/handSanitizer.pdf",
     },
     {
@@ -174,7 +174,7 @@ const Products = () => {
       Packaging: "20/50 Kg HDPE Bags with inner HM-HDPE Line",
       Application:
         "Caustic soda flakes are widely used in small-scale industries. They are used to make soap, cleaning agents, and remove impurities in textiles and crude oil refining. Their strong alkaline nature makes them effective for removing dirt and grease.They are also used in the production of synthetic fibers. In the petroleum industry, caustic soda flakes are used to refine crude oil and remove impurities.",
-      pdf_title: "Caustic Soda Flakes CAO",
+      pdf_title: "Caustic Soda Flakes COA",
       pdf_link: "/productsPdf/causticSodaFlakes.pdf",
     },
     {
@@ -186,7 +186,7 @@ const Products = () => {
       Packaging: "In Tanker load",
       Application:
         "Caustic soda lye is used in various industries, including soap and cleaning agents, pulp and paper, textiles, and water treatment. It is also used in food processing and the production of chemicals like detergents, bleach, and pharmaceuticals.",
-      pdf_title: "Caustic Soda Lye CAO",
+      pdf_title: "Caustic Soda Lye COA",
       pdf_link: "/productsPdf/causticSodaLye.pdf",
     },
     {
@@ -198,7 +198,7 @@ const Products = () => {
       Packaging: "ISO Container, 250 Kgs GI Drums / Road Tanker",
       Application:
         " Ortho-dichlorobenzene (ODCB) is used as a pesticide, fumigant, solvent, and ingredient in various products such as adhesives, cleaners, and air fresheners. It is also used in the production of dyes, pharmaceuticals, and synthetic resins due to its high stability and low volatility.",
-      pdf_title: "Ortho Dichloro Benzene (ODCB) CAO",
+      pdf_title: "Ortho Dichloro Benzene (ODCB) COA",
       pdf_link: "/productsPdf/orthoDichloroBenzene(ODCB).pdf",
     },
     {
@@ -209,7 +209,7 @@ const Products = () => {
       Packaging: "MS Drums(210 liter), ISO Tank and Bulk",
       Application:
         "Mineral turpentine oil is a versatile solvent used for thinning paints and varnishes, cleaning machinery and tools, producing chemicals, and manufacturing rubber and textiles. It can also be used as a fuel.",
-      pdf_title: "Mineral Turpentine Oil (MTO) CAO",
+      pdf_title: "Mineral Turpentine Oil (MTO) COA",
       pdf_link: "/productsPdf/mineralTurpentineOil(MTO).pdf",
     },
     {
@@ -221,7 +221,7 @@ const Products = () => {
       Packaging: "MS Drums/plastic drums(210 liter), ISO Tank and Bulk",
       Application:
         "Di Ethyl Glycol (DEG) is a versatile chemical used as a solvent for resins, dyes, and oils, as a coupling agent in water-based coatings and inks, and as a component in antifreeze and heat transfer fluids. It is also used in the production of  lubricants, surfactants, and polyester resins, and among other applications.",
-      pdf_title: "Di Ethyl Glycol (DEG) CAO",
+      pdf_title: "Di Ethyl Glycol (DEG) COA",
       pdf_link: "/productsPdf/diEthylGlycol(DEG).pdf",
     },
     {
@@ -233,7 +233,7 @@ const Products = () => {
       Packaging: "MS Drums/plastic drums(210 liter), ISO Tank and Bulk",
       Application:
         "Mono Ethyl Glycol (MEG) is a versatile chemical used as a raw material in the production of polyester fibers and resins, as a solvent for paints and coatings, and in the production of antifreeze and coolants for automobiles. It is also used in the production of detergents, cosmetics, and pharmaceuticals.",
-      pdf_title: "Mono Ethyl Glycol (MEG) CAO",
+      pdf_title: "Mono Ethyl Glycol (MEG) COA",
       pdf_link: "/productsPdf/monoEthylGlycol(MEG).pdf",
     },
     {
@@ -250,7 +250,7 @@ const Products = () => {
       Packaging: "MS Drums, ISO Tank and Bulk",
       Application:
         "-Methylene chloride is a colorless,  versatile solvent used in adhesives, paint, chemical processing, pharmaceuticals, metal cleaning, and as a propellant in aerosols and a blowing agent in the production of polyurethane foams.",
-      pdf_title: "Methylene Chloride CAO",
+      pdf_title: "Methylene Chloride COA",
       pdf_link: "/productsPdf/methyleneChloride.pdf",
     },
     {
@@ -261,8 +261,8 @@ const Products = () => {
       CAS_NO: "7647-01-0",
       Packaging: "MS Rubber - Lined Road Tankers , 250 Kg HDPE Barrels",
       Application:
-        "Hydrochloric acid (HCl) is a highly versatile chemical with numerous industrial, laboratory, and medical applications. It is used for pickling and cleaning metals, refining ores, producing chemicals, and as a catalyst.  In laboratories, it is used for analysis and cleaning equipment. It is also used in water treatment, food production, and as a cleaning agent for swimming pools.",
-      pdf_title: "Hydrochloric Acid (HCl) CAO",
+        "Hydrochloric Acid (HCl) is a highly versatile chemical with numerous industrial, laboratory, and medical applications. It is used for pickling and cleaning metals, refining ores, producing chemicals, and as a catalyst.  In laboratories, it is used for analysis and cleaning equipment. It is also used in water treatment, food production, and as a cleaning agent for swimming pools.",
+      pdf_title: "Hydrochloric Acid (HCl) COA",
       pdf_link: "/productsPdf/hydrochloricAcid(HCL).pdf",
     },
   ];
@@ -289,6 +289,7 @@ const Products = () => {
       );
     }
   };
+
   return (
     <>
       <Head>

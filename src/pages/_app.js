@@ -2,6 +2,7 @@ import '@/styles/globals.css'
 import Navbar from '../components/navbar/Navbar'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from '@/components/footer/Footer';
 
 export default function App({ Component, pageProps }) {
   return (
@@ -20,6 +21,7 @@ export default function App({ Component, pageProps }) {
       />
       <Navbar />
       <Component {...pageProps} />
+      <Footer />
     </>
   )
 }
