@@ -33,7 +33,10 @@ const Navbar = () => {
               <li className="text-xl font-bold cursor-pointer ">
                 <Link href="/">Home</Link>
               </li>
-              <li className="text-xl font-bold cursor-pointer ">About Us</li>
+              <li className="text-xl font-bold cursor-pointer ">
+                {" "}
+                <Link href="/aboutUs">About Us</Link>
+              </li>
               <li className="text-xl font-bold cursor-pointer ">
                 <Link href="/products">Products</Link>
               </li>

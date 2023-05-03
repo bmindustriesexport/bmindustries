@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
 import { BiPhoneCall } from "react-icons/bi";
+import { FaWhatsapp } from "react-icons/fa";
+import { SlLocationPin } from "react-icons/sl";
 
 const Footer = () => {
   return (
@@ -10,7 +12,7 @@ const Footer = () => {
       <Head>
         <style>
           {`footer {
-  box-shadow: 0 -5px 5px -5px rgba(0, 0, 0, 0.3);
+ box-shadow: 0 -5px 5px -5px rgba(0, 0, 0, 0.3);
 }`}
         </style>
       </Head>
@@ -33,7 +35,7 @@ const Footer = () => {
           <Link className=" text-lg uppercase" href="/">
             Home
           </Link>
-          <Link className=" text-lg uppercase" href="/">
+          <Link className=" text-lg uppercase" href="/aboutUs">
             About Us
           </Link>
           <Link className=" text-lg uppercase" href="/products">
@@ -52,10 +54,17 @@ const Footer = () => {
         <hr className="w-full m-[10px] md:hidden" />
         <div className="flex flex-col items-center justify-center w-[80%] lg:w-[30%]">
           <h1 className="text-2xl font-bold">Contact Us</h1>
-          <p className="text-center">
-            New Block No. 70, Lalji Wado, Nr Zanu Patiya, Bhuvaldi, Ahmedabad
-            -382430 , Gujarat , India
-          </p>
+          <Link
+            target="_blank"
+            href="https://www.google.com/maps/place/BM+Industries/@23.0356193,72.7289028,17z/data=!3m1!4b1!4m6!3m5!1s0x395e7d26fbecc1f5:0xd5da7ae4a0cc0c4c!8m2!3d23.0356193!4d72.7289028!16s%2Fg%2F11j9l85593"
+          >
+            <span className="text-center flex">
+              <SlLocationPin className="text-3xl" />
+              New Block No. 70, Lalji Wado, Nr Zanu Patiya, Bhuvaldi, Ahmedabad
+              -382430 , Gujarat , India
+            </span>
+          </Link>
+
           <div className="flex mt-[10px] flex-col">
             <Link href="tel:+917574842044">
               <div className="flex items-center cursor-pointer">
@@ -69,10 +78,29 @@ const Footer = () => {
                 <span className="text-lg">+918128594909</span>
               </div>
             </Link>
+            <Link
+              target="_blank"
+              className="mt-[5px]"
+              href="https://api.whatsapp.com/send?phone=7574842044&amp;text=Heyy%20..%20Nice%20to%20meet%20you!!!"
+            >
+              <div className="flex items-center cursor-pointer">
+                <FaWhatsapp className="text-xl mr-1" />{" "}
+                <span className="text-lg">+917574842044</span>
+              </div>
+            </Link>
+            <Link
+              target="_blank"
+              href="https://api.whatsapp.com/send?phone=8128594909&amp;text=Heyy%20..%20Nice%20to%20meet%20you!!!"
+            >
+              <div className="flex items-center cursor-pointer">
+                <FaWhatsapp className="text-xl mr-1" />{" "}
+                <span className="text-lg">+918128594909</span>
+              </div>
+            </Link>
           </div>
           <Link href="mailto:bmindustriesexport@gmail.com">
             <div className="flex items-center">
-              <AiOutlineMail className="text-xl mr-1" />{" "}
+              <AiOutlineMail className="text-xl mr-1" />
               <span className="text-[1.1rem]">
                 bmindustriesexport@gmail.com
               </span>
