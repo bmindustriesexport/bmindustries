@@ -16,11 +16,11 @@ export default function Home() {
           background: "url(/homePageBackground.jpg)",
           backgroundSize: "cover",
         }}
-        className="md:h-[45vh] relative flex justify-center items-center"
+        className="md:h-[50vh] flex justify-center items-center"
       >
-        <div className="absolute right-[2%] top-[40%] z-20">
+        <div className="fixed right-[3.2%] md:right-0 top-[40%] z-20">
           <Image
-            src="/brochureIcon.png"
+            src="/brochure.png"
             width={20}
             height={0}
             alt="Brochure Icon"
@@ -39,19 +39,13 @@ export default function Home() {
               border: "1px solid rgba( 255, 255, 255, 0.18 )",
             }}
           >
-            <ScrollAnimation
-              animateIn="animate__fadeInDown"
-              animateOut="animate__fadeInUp"
-            >
+            <ScrollAnimation animateIn="animate__fadeInDown">
               <h1 className="animate__animated animate__fadeInDown text-white text-3xl lg:text-4xl">
                 Uncompromising quality for 25+ years - your trusted source since
                 1998
               </h1>
             </ScrollAnimation>
-            <ScrollAnimation
-              animateIn="animate__fadeInUp"
-              animateOut="animate__fadeInDown"
-            >
+            <ScrollAnimation animateIn="animate__fadeInUp">
               <p className="animate__animated animate__fadeInUp text-white mt-3 text-lg md:text-xl capitalize">
                 ISO 9001 : 2015 Certified Company
               </p>
@@ -62,7 +56,6 @@ export default function Home() {
       <div className="flex mt-[10px] items-center flex-col-reverse lg:flex-row justify-center">
         <ScrollAnimation
           animateIn="animate__fadeInUp"
-          animateOut="animate__fadeInDown"
           className="flex flex-col gap-[10px] ml-[10px] lg:w-[85%]"
         >
           <p className="text-xl mt-2 font-normal">
@@ -75,10 +68,7 @@ export default function Home() {
             a zero pollution policy.
           </p>
         </ScrollAnimation>
-        <ScrollAnimation
-          animateIn="animate__fadeInDown"
-          animateOut="animate__fadeInDown"
-        >
+        <ScrollAnimation animateIn="animate__fadeInDown">
           <Image
             src="/laboratory.png"
             width={150}
@@ -91,7 +81,6 @@ export default function Home() {
       <div id="whyChooseUs" className="mt-[30px]">
         <ScrollAnimation
           animateIn="animate__fadeInDown"
-          animateOut="animate__fadeInDown"
           initiallyVisible
           className="lg:text-center lg:w-[80%] lg:m-auto ml-[10px]"
         >
@@ -108,7 +97,6 @@ export default function Home() {
         <hr className="m-5 border" />
         <ScrollAnimation
           animateIn="animate__fadeInUp"
-          animateOut="animate__fadeInDown"
           initiallyVisible
           className="animate__animated flex ml-[10px] lg:w-[70%] justify-center items-center lg:m-auto gap-5 flex-col lg:flex-row"
         >
@@ -137,7 +125,6 @@ export default function Home() {
         <ScrollAnimation
           initiallyVisible
           animateIn="animate__fadeInUp"
-          animateOut="animate__fadeInDown"
           className="flex ml-[10px] lg:w-[70%] justify-center items-center lg:m-auto gap-5 flex-col lg:flex-row"
         >
           <div>
@@ -165,7 +152,6 @@ export default function Home() {
         <ScrollAnimation
           initiallyVisible
           animateIn="animate__fadeInUp"
-          animateOut="animate__fadeInDown"
           className="flex ml-[10px] lg:w-[70%] justify-center items-center lg:m-auto gap-5 flex-col lg:flex-row"
         >
           <div>
@@ -194,7 +180,6 @@ export default function Home() {
         <ScrollAnimation
           initiallyVisible
           animateIn="animate__fadeInUp"
-          animateOut="animate__fadeInDown"
           className="flex ml-[10px] lg:w-[70%] justify-center items-center lg:m-auto gap-5 flex-col lg:flex-row"
         >
           <div>
@@ -221,7 +206,6 @@ export default function Home() {
         <ScrollAnimation
           initiallyVisible
           animateIn="animate__fadeInUp"
-          animateOut="animate__fadeInDown"
           className="flex ml-[10px] lg:w-[70%] justify-center items-center lg:m-auto gap-5 flex-col lg:flex-row"
         >
           <div>
@@ -246,11 +230,8 @@ export default function Home() {
         </ScrollAnimation>
       </div>
       <hr className="border my-10" />
-      <div>
-        <ScrollAnimation
-          animateIn="animate__fadeInDown"
-          animateOut="animate__fadeInUp"
-        >
+      <div id="certificates">
+        <ScrollAnimation animateIn="animate__fadeInDown" initiallyVisible>
           <h1 className="text-center text-sky-700 text-3xl font-normal underline">
             Certifications
           </h1>

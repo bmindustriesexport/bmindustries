@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="relative text-sky-600 shadow-md p-[5px] ">
+      <div className="relative text-sky-600 shadow-md py-[5px] ">
         <div className="flex items-center ">
           <div className="w-[15%] md:w-[10%]">
             <Link href={"/"}>
@@ -34,7 +34,6 @@ const Navbar = () => {
                 <Link href="/">Home</Link>
               </li>
               <li className="text-xl font-bold cursor-pointer ">
-                {" "}
                 <Link href="/aboutUs">About Us</Link>
               </li>
               <li className="text-xl font-bold cursor-pointer ">
@@ -45,6 +44,9 @@ const Navbar = () => {
               </li>
               <li className="text-xl font-bold cursor-pointer ">
                 <Link href="/#whyChooseUs">Why Choose Us</Link>
+              </li>
+              <li className="text-xl font-bold cursor-pointer ">
+                <Link href="/#certificates">Certifications</Link>
               </li>
               <li className="text-xl font-bold cursor-pointer ">
                 <Link href="/contact">Contact Us</Link>

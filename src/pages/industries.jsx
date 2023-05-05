@@ -62,7 +62,7 @@ const Industries = () => {
 
       <div className="animate__animated animate__fadeInDown m-auto w-full h-full">
         <Slider {...settings}>
-          <div className="h-[400px]">
+          <div className="lg:h-[400px]">
             <Image
               className="h-[100%] w-full object-cover"
               src="/carousel1.jpg"
@@ -72,7 +72,7 @@ const Industries = () => {
               height={0}
             />
           </div>
-          <div className="h-[400px]">
+          <div className="lg:h-[400px]">
             <Image
               className="h-[100%] w-full object-cover"
               src="/carousel2.png"

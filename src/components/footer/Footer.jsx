@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
 import { BiPhoneCall } from "react-icons/bi";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { SlLocationPin } from "react-icons/sl";
 
 const Footer = () => {
@@ -47,6 +47,9 @@ const Footer = () => {
           <Link className=" text-lg uppercase" href="/">
             Why choose us
           </Link>
+          <Link className=" text-lg uppercase" href="/#certificates">
+            Certifications
+          </Link>
           <Link className=" text-lg uppercase" href="/contact">
             Contact Us
           </Link>
@@ -81,7 +84,7 @@ const Footer = () => {
             <Link
               target="_blank"
               className="mt-[5px]"
-              href="https://api.whatsapp.com/send?phone=7574842044&amp;text=Heyy%20..%20Nice%20to%20meet%20you!!!"
+              href="https://api.whatsapp.com/send?phone=7574842044&amp;text=Hello! Thank you for contacting us via WhatsApp. How may I assist you today?"
             >
               <div className="flex items-center cursor-pointer">
                 <FaWhatsapp className="text-xl mr-1" />{" "}
@@ -90,7 +93,7 @@ const Footer = () => {
             </Link>
             <Link
               target="_blank"
-              href="https://api.whatsapp.com/send?phone=8128594909&amp;text=Heyy%20..%20Nice%20to%20meet%20you!!!"
+              href="https://api.whatsapp.com/send?phone=8128594909&amp;text=Hello! Thank you for contacting us via WhatsApp. How may I assist you today?"
             >
               <div className="flex items-center cursor-pointer">
                 <FaWhatsapp className="text-xl mr-1" />{" "}
@@ -98,6 +101,12 @@ const Footer = () => {
               </div>
             </Link>
           </div>
+          <Link href="#">
+            <div className="flex items-center cursor-pointer">
+              <FaLinkedin className="text-xl mr-1" />
+              <span className="text-lg">linkedin</span>
+            </div>
+          </Link>
           <Link href="mailto:bmindustriesexport@gmail.com">
             <div className="flex items-center">
               <AiOutlineMail className="text-xl mr-1" />
