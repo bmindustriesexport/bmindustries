@@ -3,9 +3,9 @@ import React from "react";
 
 const NavBarMobile = ({ setShowNavBar, showNavBar }) => {
   return (
-    <nav className="absolute bg-white z-50 w-full h-screen text-center ">
+    <nav className="absolute bg-white z-50 w-full h-[200vh] text-center ">
       <ul className="w-full">
-        <li className="text-2xl p-5 text-sky-600 font-bold cursor-pointer underline">
+        <li className="text-2xl py-5 text-sky-600 font-bold cursor-pointer underline">
           <Link
             onClick={(e) => {
               e.stopPropagation();

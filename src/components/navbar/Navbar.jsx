@@ -4,6 +4,7 @@ import { GoThreeBars } from "react-icons/go";
 import NavBarMobile from "./NavBarMobile";
 import { RxCross1 } from "react-icons/rx";
 import Link from "next/link";
+import Head from "next/head";
 
 const Navbar = () => {
   const [showNavBar, setShowNavBar] = useState();
@@ -14,6 +15,13 @@ const Navbar = () => {
 
   return (
     <>
+      <Head>
+        <style>
+          {`body {
+      overflow: ${showNavBar ? "hidden" : "auto"};
+        }`}
+        </style>
+      </Head>
       <div className="relative text-sky-600 shadow-md py-[5px] ">
         <div className="flex items-center ">
           <div className="w-[15%] md:w-[10%]">
