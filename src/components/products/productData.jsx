@@ -16,10 +16,10 @@ const ProductData = ({
       <div
         key={product.id}
         onClick={() => toggleAccordionAnimationHandler(mapIndex)}
-        className={`flex w-[90%] m-auto  items-center mt-5 cursor-pointer`}
+        className={`animate__animated animate__fadeInUp flex w-[90%] m-auto  items-center mt-5 cursor-pointer`}
       >
         <div
-          className={`flex p-3 items-center gap-1  rounded-t-md  cursor-pointer w-full ${
+          className={` flex p-3 items-center gap-1  rounded-t-md  cursor-pointer w-full ${
             openAccordionsAnimation.includes(mapIndex)
               ? " bg-sky-700"
               : "bg-slate-200 rounded-md"

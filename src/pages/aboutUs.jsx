@@ -58,7 +58,7 @@ const aboutUs = () => {
       </Head>
       <div className="m-auto w-full h-full">
         <Slider {...settings}>
-          <div className="h-[320px]">
+          <div className="h-[380px]">
             <Image
               className="h-[100%] w-full object-cover"
               src="/aboutUsCarousel1.jpg"
@@ -68,10 +68,10 @@ const aboutUs = () => {
               height={0}
             />
           </div>
-          <div className="h-[320px]">
+          <div className="h-[380px]">
             <Image
               className="h-[100%] w-full object-cover"
-              src="/aboutUsCarousel2.jpg"
+              src="/aboutUsCarousel2.png"
               alt=""
               sizes="100vw"
               width={0}

@@ -1,10 +1,11 @@
+import IndustriesImages from "@/components/industriesImages/IndustriesImages";
 import Head from "next/head";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import IndustriesImages from "@/components/industriesImages/IndustriesImages";
+import ScrollAnimation from "react-animate-on-scroll";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -43,12 +44,6 @@ function SamplePrevArrow(props) {
 }
 
 const Industries = () => {
-  const [loaded, setLoaded] = useState(false);
-
-  useEffect(() => {
-    setLoaded(true);
-  }, []);
-
   const settings = {
     dots: true,
     infinite: true,
@@ -62,21 +57,12 @@ const Industries = () => {
   return (
     <>
       <Head>
-        <style>
-          {`
-            .animate-h1 {
-              opacity: ${loaded ? "5" : "0"};
-              transform: translateY(${loaded ? "0" : "1500px"});
-              transition: opacity 1s ease-out, transform 1s linear;
-            }
-          `}
-        </style>
         <title>Industries</title>
       </Head>
 
-      <div className="m-auto w-full h-full">
+      <div className="animate__animated animate__fadeInDown m-auto w-full h-full">
         <Slider {...settings}>
-          <div className="h-[320px]">
+          <div className="h-[400px]">
             <Image
               className="h-[100%] w-full object-cover"
               src="/carousel1.jpg"
@@ -86,20 +72,10 @@ const Industries = () => {
               height={0}
             />
           </div>
-          <div className="h-[320px]">
+          <div className="h-[400px]">
             <Image
               className="h-[100%] w-full object-cover"
-              src="/carousel2.jpg"
-              alt=""
-              width={0}
-              height={0}
-              sizes="100vw"
-            />
-          </div>
-          <div className="h-[320px]">
-            <Image
-              className="h-[100%] w-full object-cover"
-              src="/carousel3.jpg"
+              src="/carousel2.png"
               alt=""
               width={0}
               height={0}
@@ -108,11 +84,9 @@ const Industries = () => {
           </div>
         </Slider>
       </div>
-
-      <h1 className="text-sky-600 font-bold text-3xl text-center p-4 mt-4 animate-h1">
+      <h1 className="animate__animated animate__fadeInUp text-sky-600 font-bold text-3xl text-center p-4 mt-4">
         Industries We Cater To
       </h1>
-
       <IndustriesImages />
     </>
   );

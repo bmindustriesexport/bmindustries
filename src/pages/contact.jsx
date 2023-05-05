@@ -16,12 +16,6 @@ const Contact = () => {
     otherProducts: "",
     quantity: "",
   });
-  const [loaded, setLoaded] = useState(false);
-
-  useEffect(() => {
-    setLoaded(true);
-  }, []);
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoader(true);
@@ -194,27 +188,18 @@ const Contact = () => {
     <>
       <Head>
         <title>Contact Us</title>
-        <style>
-          {`
-            .animate-h1 {
-              opacity: ${loaded ? "5" : "0"};
-              transform: translateY(${loaded ? "0" : "50px"});
-              transition: opacity 1s ease-out, transform 1s linear;
-            }
-          `}
-        </style>
       </Head>
       {loader ? (
         <Loader />
       ) : (
         <div className="mt-4">
-          <h1 className="text-center text-3xl text-sky-600 font-bold underline animate-h1">
+          <h1 className="animate__animated animate__fadeInDown text-center text-3xl text-sky-600 font-bold underline">
             Contact Us
           </h1>
           <form
             action="/contact"
             onSubmit={handleSubmit}
-            className="mt-5 flex flex-col items-center justify-center gap-4"
+            className="animate__animated animate__fadeInUp mt-5 flex flex-col items-center justify-center gap-4"
           >
             <div className="flex flex-col gap-1 w-2/3 lg:w-2/5">
               <label>

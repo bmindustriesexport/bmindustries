@@ -57,7 +57,7 @@ const IndustriesImages = () => {
   ];
 
   return (
-    <div className="flex gap-[30px] justify-center items-center flex-wrap mb-5">
+    <div className="animate__animated animate__zoomIn flex gap-[30px] justify-center items-center flex-wrap mb-5">
       {industriesCardData.map((image) => {
         return (
           <div
