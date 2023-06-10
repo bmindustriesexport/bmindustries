@@ -51,9 +51,6 @@ const Navbar = () => {
                 <Link href="/industries">Industries</Link>
               </li>
               <li className="text-xl font-bold cursor-pointer ">
-                <Link href="/#whyChooseUs">Why Choose Us</Link>
-              </li>
-              <li className="text-xl font-bold cursor-pointer ">
                 <Link href="/#certificates">Certifications</Link>
               </li>
               <li className="text-xl font-bold cursor-pointer ">

@@ -16,7 +16,7 @@ const Footer = () => {
 }`}
         </style>
       </Head>
-      <footer className="w-full shadow-top-lg flex justify-center items-center p-2 flex-col text-sky-600 md:flex-row md:pl-10 md:pr-10 md:gap-[7%] mt-5">
+      <footer className="w-full shadow-top-lg flex justify-center items-center p-2 flex-col text-sky-600 md:flex-row md:pl-10 md:pr-10 md:gap-[10%] mt-5">
         <div>
           <Link href={"/"}>
             <Image
@@ -44,9 +44,6 @@ const Footer = () => {
           <Link className=" text-lg uppercase" href="/industries">
             Industries
           </Link>
-          <Link className=" text-lg uppercase" href="/">
-            Why choose us
-          </Link>
           <Link className=" text-lg uppercase" href="/#certificates">
             Certifications
           </Link>
@@ -69,6 +66,12 @@ const Footer = () => {
           </Link>
 
           <div className="flex mt-[10px] flex-col">
+            <Link href="tel:+919904456706">
+              <div className="flex items-center cursor-pointer">
+                <BiPhoneCall className="text-xl mr-1" />{" "}
+                <span className="text-lg">+919904456706</span>
+              </div>
+            </Link>
             <Link href="tel:+917574842044">
               <div className="flex items-center cursor-pointer">
                 <BiPhoneCall className="text-xl mr-1" />{" "}
@@ -81,7 +84,7 @@ const Footer = () => {
                 <span className="text-lg">+918128594909</span>
               </div>
             </Link>
-            <Link
+            {/* <Link
               target="_blank"
               className="mt-[5px]"
               href="https://api.whatsapp.com/send?phone=7574842044&amp;text=Hello! Thank you for contacting us via WhatsApp. How may I assist you today?"
@@ -100,6 +103,15 @@ const Footer = () => {
                 <span className="text-lg">+918128594909</span>
               </div>
             </Link>
+            <Link
+              target="_blank"
+              href="https://api.whatsapp.com/send?phone=8128594909&amp;text=Hello! Thank you for contacting us via WhatsApp. How may I assist you today?"
+            >
+              <div className="flex items-center cursor-pointer">
+                <FaWhatsapp className="text-xl mr-1" />{" "}
+                <span className="text-lg">+919904456706</span>
+              </div>
+            </Link> */}
           </div>
           <Link href="#">
             <div className="flex items-center cursor-pointer">
@@ -107,12 +119,10 @@ const Footer = () => {
               <span className="text-lg">linkedin</span>
             </div>
           </Link>
-          <Link href="mailto:bmindustriesexport@gmail.com">
+          <Link href="mailto:admin@bmchem.in">
             <div className="flex items-center">
               <AiOutlineMail className="text-xl mr-1" />
-              <span className="text-[1.1rem]">
-                bmindustriesexport@gmail.com
-              </span>
+              <span className="text-[1.1rem]">admin@bmchem.in</span>
             </div>
           </Link>
           <Link href="/contact">
