@@ -32,8 +32,6 @@ export default function Home() {
     <>
       <Head>
         <title>BM INDUSTRIES</title>
-        <meta name="description" content="Offical Website of BM Chem"></meta>
-        <meta name="keywords" content="bmchem bm chem bhchemin BM industries BMindustries"></meta>
       </Head>
       <div
         style={{
@@ -71,11 +69,11 @@ export default function Home() {
             }}
           >
             <div className="py-40 md:py-64">
-              <h1 className="animate__animated animate__fadeInDown text-white text-2xl md:text-3xl w-[70%] lg:text-4xl">
+              <h1 className="animate__animated animate__fadeInDown text-white text-2xl md:text-3xl w-[85%] lg:text-4xl">
                 Uncompromising quality for 25+ years - your trusted source since
                 1998
               </h1>
-              <p className="animate__animated animate__fadeInUp text-white md:mt-3 text-lg md:text-xl capitalize w-[85%]">
+              <p className="animate__animated animate__fadeInUp text-white md:mt-3 text-lg md:text-xl capitalize">
                 ISO 9001 : 2015 Certified Company
               </p>
             </div>
@@ -88,14 +86,14 @@ export default function Home() {
           backgroundRepeat: "no-repeat",
           marginTop: "30px",
         }}
-        className="flex md:bg-[url('/productbg.jpg')] flex-wrap justify-center gap-4 items-center h-[65vh] md:h-[75vh] flex-col p-3 relative"
+        className="flex md:bg-[url('/productbg.jpg')] flex-wrap justify-center gap-4 items-center h-[120vh] md:h-[75vh] flex-col p-3 relative"
       >
         <div className="absolute top-16 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl">
           <h1 className="underline text-[#1b52f4] font-semibold uppercase">
             Products
           </h1>
         </div>
-        <div className="flex mt-16 w-full justify-between gap-4 flex-col md:flex-row pb-4 flex-wrap">
+        <div className="flex mt-16 w-full justify-between gap-4 flex-col md:flex-row pb-4 ">
           <div
             style={{
               boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
@@ -148,8 +146,7 @@ export default function Home() {
             </h2>
           </div>
         </div>
-        
-        <button className="border border-[#1b52f4] text-white text-xl px-4 py-2 rounded-[30px] bg-[#1b52f4] lg:mt-16 ">
+        <button className="border border-[#1b52f4] text-white text-xl px-4 py-2 rounded-[30px] bg-[#1b52f4] mt-16 ">
           <Link href={"/products"}>View All Products</Link>
         </button>
       </div>
@@ -159,9 +156,10 @@ export default function Home() {
         style={{
           backgroundImage: "url('/performanceBackground.png')",
           // background: `#328BC1`,
+          height: "75vh",
           backgroundSize: "cover",
         }}
-        className="flex h-[60vh] md:h-[75vh] justify-end md:justify-between gap-4 items-center flex-col md:flex-row lg:px-40 relative"
+        className="flex justify-end md:justify-between gap-4 items-center flex-col md:flex-row md:px-40 relative"
       >
         <div className="absolute top-16 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-sky-600 text-4xl">
           <h1 className="underline uppercase">Performance</h1>
@@ -225,14 +223,14 @@ export default function Home() {
           // height: "75vh",
           backgroundSize: "cover",
         }}
-        className="flex flex-wrap justify-center gap-4 items-center h-[90vh] md:h-[120vh] lg:h-[90vh] flex-col p-3 md:px-12 relative"
+        className="flex flex-wrap justify-center gap-4 items-center h-[120vh] md:h-[75vh] flex-col p-3 md:px-12 relative"
       >
         <div className="absolute top-16 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl">
-          <h1 className="underline text-[#1b52f4] font-semibold uppercase ">
+          <h1 className="underline text-[#1b52f4] font-semibold uppercase">
             Services
           </h1>
         </div>
-        <div className="flex mt-16 w-full justify-between gap-4 flex-col lg:flex-row flex-wrap">
+        <div className="flex mt-16 w-full justify-between gap-4 flex-col md:flex-row">
           <div
             style={{
               // background: "rgba( 27, 82, 244, 1 )",
@@ -242,7 +240,7 @@ export default function Home() {
             }}
             className="p-5 md:p-[35px] bg-white hover:bg-[#1b52f4] transition hover:text-white text-[#1b52f4] font-semibold"
           >
-            <h2 className="text-xl md:text-3xl flex md:mt-3 flex-col items-center lg:w-[300px]">
+            <h2 className="text-xl md:text-3xl flex md:mt-3 flex-col items-center md:w-[300px]">
               <p>1OOMT + ready stock</p>
             </h2>
           </div>
@@ -255,7 +253,7 @@ export default function Home() {
             }}
             className="p-5 md:p-[35px] bg-white hover:bg-[#1b52f4] transition hover:text-white text-[#1b52f4] font-semibold"
           >
-            <h2 className="text-xl md:text-3xl flex md:mt-3 flex-col items-center lg:w-[300px]">
+            <h2 className="text-xl md:text-3xl flex md:mt-3 flex-col items-center md:w-[300px]">
               <p>On time delivery</p>
             </h2>
           </div>
@@ -268,12 +266,12 @@ export default function Home() {
             }}
             className="p-5 md:p-[35px] bg-white hover:bg-[#1b52f4] transition hover:text-white text-[#1b52f4] font-semibold"
           >
-            <h2 className="text-xl md:text-3xl flex flex-col items-center lg:w-[300px]">
+            <h2 className="text-xl md:text-3xl flex flex-col items-center md:w-[300px]">
               <p>Proactive customer support</p>
             </h2>
           </div>
         </div>
-        <div className="flex mt-10 w-full justify-between gap-4 flex-col lg:flex-row flex-wrap">
+        <div className="flex mt-10 w-full justify-between gap-4 flex-col md:flex-row">
           <div
             style={{
               boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
@@ -282,7 +280,7 @@ export default function Home() {
             }}
             className="p-5 md:p-[35px] bg-white hover:bg-[#1b52f4] transition hover:text-white text-[#1b52f4] font-semibold"
           >
-            <h2 className="text-xl md:text-3xl flex flex-col items-center lg:w-[300px]">
+            <h2 className="text-xl md:text-3xl flex flex-col items-center md:w-[300px]">
               <p>Customised packing and labelling</p>
             </h2>
           </div>
@@ -295,7 +293,7 @@ export default function Home() {
             }}
             className="p-5 md:p-[35px] bg-white hover:bg-[#1b52f4] transition hover:text-white text-[#1b52f4] font-semibold"
           >
-            <h2 className="text-xl md:text-3xl flex md:mt-3 flex-col items-center lg:w-[300px]">
+            <h2 className="text-xl md:text-3xl flex md:mt-3 flex-col items-center md:w-[300px]">
               <p>Quality Control</p>
             </h2>
           </div>
@@ -308,7 +306,7 @@ export default function Home() {
             }}
             className="p-5 md:p-[35px] bg-white hover:bg-[#1b52f4] transition hover:text-white text-[#1b52f4] font-semibold"
           >
-            <h2 className="text-xl md:text-3xl flex md:mt-3 flex-col items-center lg:w-[300px]">
+            <h2 className="text-xl md:text-3xl flex md:mt-3 flex-col items-center md:w-[300px]">
               <p>Technical consulation</p>
             </h2>
           </div>
