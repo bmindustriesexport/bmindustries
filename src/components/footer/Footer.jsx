@@ -72,16 +72,16 @@ const Footer = () => {
                 <span className="text-lg">+919904456706</span>
               </div>
             </Link>
+            <Link href="tel:+917574842046">
+              <div className="flex items-center cursor-pointer">
+                <BiPhoneCall className="text-xl mr-1" />{" "}
+                <span className="text-lg">+917574842046</span>
+              </div>
+            </Link>
             <Link href="tel:+917574842044">
               <div className="flex items-center cursor-pointer">
                 <BiPhoneCall className="text-xl mr-1" />{" "}
                 <span className="text-lg">+917574842044</span>
-              </div>
-            </Link>
-            <Link href="tel:+918128594909">
-              <div className="flex items-center cursor-pointer">
-                <BiPhoneCall className="text-xl mr-1" />{" "}
-                <span className="text-lg">+918128594909</span>
               </div>
             </Link>
             {/* <Link
