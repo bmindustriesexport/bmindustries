@@ -73,7 +73,7 @@ export default function Home() {
             <div className="py-40 md:py-64">
               <h1 className="animate__animated animate__fadeInDown text-white text-2xl md:text-3xl w-[70%] lg:text-4xl">
                 Uncompromising quality for 25+ years - your trusted source since
-                1998
+                1997
               </h1>
               <p className="animate__animated animate__fadeInUp text-white md:mt-3 text-lg md:text-xl capitalize w-[85%]">
                 ISO 9001 : 2015 Certified Company
@@ -88,7 +88,7 @@ export default function Home() {
           backgroundRepeat: "no-repeat",
           marginTop: "30px",
         }}
-        className="flex md:bg-[url('/productbg.jpg')] flex-wrap justify-center gap-4 items-center h-[95vh] md:h-[75vh] flex-col p-3 relative"
+        className="flex md:bg-[url('/productbg.jpg')] flex-wrap justify-center gap-4 items-center h-fit md:h-[75vh] flex-col p-3 relative"
       >
         <div className="absolute top-16 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl">
           <h1 className="underline text-sky-600 font-semibold uppercase">
@@ -158,10 +158,9 @@ export default function Home() {
         style={{
           backgroundImage: "url('/performanceBackground.png')",
           // background: `#328BC1`,
-          height: "75vh",
           backgroundSize: "cover",
         }}
-        className="flex justify-end md:justify-between gap-4 items-center flex-col md:flex-row lg:px-40 relative"
+        className="h-[65vh] flex justify-end md:justify-between gap-4 items-center flex-col md:flex-row lg:px-40 relative"
       >
         <div className="absolute top-16 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-sky-600 text-4xl">
           <h1 className="underline uppercase">Performance</h1>
@@ -225,14 +224,14 @@ export default function Home() {
           // height: "75vh",
           backgroundSize: "cover",
         }}
-        className="flex flex-wrap justify-center gap-4 items-center h-fit md:h-[80vh] flex-col p-3 md:px-12 relative"
+        className="flex flex-wrap justify-center lg:gap-4 items-center h-fit md:h-[80vh] flex-col p-3 md:px-12 relative"
       >
         <div className="absolute top-16 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl">
           <h1 className="underline text-sky-600 font-semibold uppercase">
             Services
           </h1>
         </div>
-        <div className="flex mt-16 w-full justify-between gap-4 flex-col md:flex-row overflow-auto p-[25px]">
+        <div className="flex mt-16 w-full justify-between gap-4 flex-col md:flex-row overflow-auto px-[25px] py-[20px]">
           <div
             style={{
               // background: "rgba( 27, 82, 244, 1 )",
@@ -273,7 +272,7 @@ export default function Home() {
             </h2>
           </div>
         </div>
-        <div className="flex  w-full justify-between gap-4 flex-col md:flex-row overflow-auto p-[25px] ">
+        <div className="flex  w-full justify-between gap-4 flex-col md:flex-row overflow-auto px-[25px] pb-[20px]">
           <div
             style={{
               boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
@@ -309,7 +308,7 @@ export default function Home() {
             className="p-5 md:p-[35px] bg-white hover:bg-sky-600 transition hover:text-white text-sky-600 font-semibold"
           >
             <h2 className="text-xl md:text-3xl flex md:mt-3 flex-col items-center md:w-[300px]">
-              <p>Technical consulation</p>
+              <p>Technical consultation</p>
             </h2>
           </div>
         </div>
