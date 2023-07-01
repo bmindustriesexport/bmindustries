@@ -119,10 +119,10 @@ const Footer = () => {
               <span className="text-lg">linkedin</span>
             </div>
           </Link>
-          <Link href="mailto:admin@bmchem.in">
+          <Link href="mailto:sales@bmchem.in">
             <div className="flex items-center">
               <AiOutlineMail className="text-xl mr-1" />
-              <span className="text-[1.1rem]">admin@bmchem.in</span>
+              <span className="text-[1.1rem]">sales@bmchem.in</span>
             </div>
           </Link>
           <Link href="/contact">
