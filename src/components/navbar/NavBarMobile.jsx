@@ -49,7 +49,7 @@ const NavBarMobile = ({ setShowNavBar, showNavBar }) => {
             }}
             href="/industries"
           >
-            Industries
+            Applications
           </Link>
         </li>
         <hr />

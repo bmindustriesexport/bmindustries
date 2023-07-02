@@ -24,6 +24,7 @@
     /* transform: scaleY(0); */
     max-height: 0%;
   }
+
   100% {
     /* transform-origin: top; */
     opacity: 1;
@@ -44,6 +45,7 @@
     max-height: 100%;
     /* transform: scaleY(1); */
   }
+
   /* 50% {
     opacity: 0;
   } */
@@ -52,5 +54,129 @@
     opacity: 0;
     max-height: 0%;
     /* transform: scaleY(0); */
+  }
+}
+
+.noScroll::-webkit-scrollbar {
+  display: none;
+}
+
+.homeProducts {
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 0;
+  background-color: white;
+  transition: background-color 0.3s, color 0.3s;
+  color: #0284C7;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeProducts:hover {
+  background-color: #0284C7;
+  color: white;
+}
+
+.homeProductsHeading {
+  font-size: 30px;
+  text-align: center;
+  width: 250px;
+}
+
+.homeServices {
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  border-radius: 10px;
+  padding: 5px;
+  background-color: white;
+  transition: background-color 0.3s, color 0.3s;
+  color: #0284C7;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeServices:hover {
+  background-color: #0284C7;
+  color: white;
+}
+
+.homeServiceHeading {
+  font-size: 30px;
+  text-align: center;
+  width: 400px;
+  padding: 10px;
+}
+
+@media (max-width: 1410px) {
+  .homeServiceHeading {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1110px) {
+  .homeServiceHeading {
+    width: 250px;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 960px) {
+  .homeServiceHeading {
+    width: 200px;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1335px) {
+  .homeProducts {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 1260px) {
+  .homeProducts {
+    padding: 20px 10px;
+  }
+
+  .homeProductsHeading {
+    font-size: 20px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .homeProductsHeading {
+    font-size: 20px;
+    width: 160px;
+  }
+}
+
+@media (max-width: 865px) {
+  .homeProductsHeading {
+    font-size: 20px;
+    width: 130px;
+  }
+
+  .homeServiceHeading {
+    width: 160px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 778px) {
+  .homeProductsHeading {
+    width: calc(100vw - 100px);
+    font-size: 30px;
+  }
+
+  .homeServiceHeading {
+    width: calc(100vw - 100px);
+    font-size: 30px;
   }
 }

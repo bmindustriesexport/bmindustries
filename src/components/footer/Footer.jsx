@@ -42,7 +42,7 @@ const Footer = () => {
             Products
           </Link>
           <Link className=" text-lg uppercase" href="/industries">
-            Industries
+            Applications
           </Link>
           <Link className=" text-lg uppercase" href="/#certificates">
             Certifications
@@ -72,16 +72,16 @@ const Footer = () => {
                 <span className="text-lg">+919904456706</span>
               </div>
             </Link>
-            <Link href="tel:+917574842046">
-              <div className="flex items-center cursor-pointer">
-                <BiPhoneCall className="text-xl mr-1" />{" "}
-                <span className="text-lg">+917574842046</span>
-              </div>
-            </Link>
             <Link href="tel:+917574842044">
               <div className="flex items-center cursor-pointer">
                 <BiPhoneCall className="text-xl mr-1" />{" "}
                 <span className="text-lg">+917574842044</span>
+              </div>
+            </Link>
+            <Link href="tel:+917574842046">
+              <div className="flex items-center cursor-pointer">
+                <BiPhoneCall className="text-xl mr-1" />{" "}
+                <span className="text-lg">+917574842046 (exports)</span>
               </div>
             </Link>
             {/* <Link
@@ -123,6 +123,12 @@ const Footer = () => {
             <div className="flex items-center">
               <AiOutlineMail className="text-xl mr-1" />
               <span className="text-[1.1rem]">sales@bmchem.in</span>
+            </div>
+          </Link>
+          <Link href="mailto:bmindustriesexport@gmail.com">
+            <div className="flex items-center">
+              <AiOutlineMail className="text-xl mr-1" />
+              <span className="text-[1.1rem]">bmindustriesexport@gmail.com</span>
             </div>
           </Link>
           <Link href="/contact">

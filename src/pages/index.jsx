@@ -75,7 +75,7 @@ export default function Home() {
                 Uncompromising quality for 25+ years - your trusted source since
                 1997
               </h1>
-              <p className="animate__animated animate__fadeInUp text-white md:mt-3 text-lg md:text-xl capitalize w-[85%]">
+              <p className="animate__animated animate__fadeInUp text-white   text-lg md:text-xl capitalize w-[85%]">
                 ISO 9001 : 2015 Certified Company
               </p>
             </div>
@@ -88,63 +88,43 @@ export default function Home() {
           backgroundRepeat: "no-repeat",
           marginTop: "30px",
         }}
-        className="flex md:bg-[url('/productbg.jpg')] flex-wrap justify-center gap-4 items-center h-fit md:h-[75vh] flex-col p-3 relative"
+        className="flex md:bg-[url('/productbg.jpg')] flex-wrap justify-center gap-4 items-center h-fit md:h-[60vh] lg:h-[75vh] flex-col p-3 relative"
       >
         <div className="absolute top-16 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl">
           <h1 className="underline text-sky-600 font-semibold uppercase">
             Products
           </h1>
         </div>
-        <div className="flex mt-16 w-full justify-between gap-4 flex-col md:flex-row pb-4 overflow-auto p-[25px] lg:p-0">
+        <div className="flex mt-16 w-full justify-between gap-4 flex-col md:flex-row pb-4 p-[25px] md:p-[30px] flex-wrap">
           <div
-            style={{
-              boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
-              backdropFilter: "blur( 0px )",
-              borderRadius: "10px",
-            }}
-            className="p-5 md:p-[35px] bg-white hover:bg-sky-600 transition hover:text-white text-sky-600 font-semibold"
+            className="homeProducts "
           >
-            <h2 className="text-xl md:text-3xl flex md:mt-3 flex-col items-center md:w-[250px]">
-              <p>Chloroform</p>
+            <h2 className="homeProductsHeading">
+              Chloroform
             </h2>
           </div>
 
           <div
-            style={{
-              boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
-              backdropFilter: "blur( 0px )",
-              borderRadius: "10px",
-            }}
-            className="p-5 md:p-[35px] bg-white hover:bg-sky-600 transition hover:text-white text-sky-600 font-semibold"
+            className="homeProducts "
           >
-            <h2 className="text-xl md:text-3xl flex md:mt-3 flex-col items-center md:w-[250px]">
-              <p>Solvent C-9</p>
+            <h2 className="homeProductsHeading">
+              Solvent C-9
             </h2>
           </div>
 
           <div
-            style={{
-              boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
-              backdropFilter: "blur( 0px )",
-              borderRadius: "10px",
-            }}
-            className="p-5 md:p-[35px] bg-white hover:bg-sky-600 transition hover:text-white text-sky-600 font-semibold"
+            className="homeProducts "
           >
-            <h2 className="text-xl md:text-3xl flex md:mt-3 flex-col items-center md:w-[250px]">
-              <p>Tri Ethyl Glycol (TEG)</p>
+            <h2 className="homeProductsHeading">
+              Tri Ethyl Glycol (TEG)
             </h2>
           </div>
 
           <div
-            style={{
-              boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
-              backdropFilter: "blur( 0px )",
-              borderRadius: "10px",
-            }}
-            className="p-5 md:p-[35px] bg-white hover:bg-sky-600 transition hover:text-white text-sky-600 font-semibold"
+            className="homeProducts "
           >
-            <h2 className="text-xl md:text-3xl flex flex-col items-center md:w-[250px]">
-              <p>Methylene Chloride (MDC)</p>
+            <h2 className="homeProductsHeading">
+              Methylene Chloride (MDC)
             </h2>
           </div>
         </div>
@@ -163,7 +143,7 @@ export default function Home() {
         className="h-[65vh] flex justify-end md:justify-between gap-4 items-center flex-col md:flex-row lg:px-40 relative"
       >
         <div className="absolute top-16 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-sky-600 text-4xl">
-          <h1 className="underline uppercase">Performance</h1>
+          <h1 className="underline font-semibold uppercase">Performance</h1>
         </div>
         <div
           style={
@@ -231,90 +211,66 @@ export default function Home() {
             Services
           </h1>
         </div>
-        <div className="flex mt-16 w-full justify-between gap-4 flex-col md:flex-row overflow-auto px-[25px] py-[20px]">
+        <div className="flex mt-16 w-full justify-between gap-4 flex-col md:flex-row px-[25px] py-[20px] flex-wrap">
           <div
-            style={{
-              // background: "rgba( 27, 82, 244, 1 )",
-              boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
-              backdropFilter: "blur( 0px )",
-              borderRadius: "10px",
-            }}
-            className="p-5 md:p-[35px] bg-white hover:bg-sky-600 transition hover:text-white text-sky-600 font-semibold"
+
+            className="homeServices"
           >
-            <h2 className="text-xl md:text-3xl flex md:mt-3 flex-col items-center md:w-[300px]">
-              <p>1OOMT + ready stock</p>
+            <h2 className="homeServiceHeading">
+              1OOMT + ready stock
             </h2>
           </div>
 
           <div
-            style={{
-              boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
-              backdropFilter: "blur( 0px )",
-              borderRadius: "10px",
-            }}
-            className="p-5 md:p-[35px] bg-white hover:bg-sky-600 transition hover:text-white text-sky-600 font-semibold"
+
+            className="homeServices"
           >
-            <h2 className="text-xl md:text-3xl flex md:mt-3 flex-col items-center md:w-[300px]">
-              <p>On time delivery</p>
+            <h2 className="homeServiceHeading">
+              On time delivery
             </h2>
           </div>
 
           <div
-            style={{
-              boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
-              backdropFilter: "blur( 0px )",
-              borderRadius: "10px",
-            }}
-            className="p-5 md:p-[35px] bg-white hover:bg-sky-600 transition hover:text-white text-sky-600 font-semibold"
+
+            className="homeServices"
           >
-            <h2 className="text-xl md:text-3xl flex flex-col items-center md:w-[300px]">
-              <p>Proactive customer support</p>
+            <h2 className="homeServiceHeading">
+              Proactive customer support
+            </h2>
+          </div>
+          <div
+
+            className="homeServices"
+          >
+            <h2 className="homeServiceHeading">
+              Customised packing and labelling
+            </h2>
+          </div>
+
+          <div
+
+            className="homeServices"
+          >
+            <h2 className="homeServiceHeading">
+              Quality Control
+            </h2>
+          </div>
+
+          <div
+
+            className="homeServices"
+          >
+            <h2 className="homeServiceHeading">
+              Technical consultation
             </h2>
           </div>
         </div>
-        <div className="flex  w-full justify-between gap-4 flex-col md:flex-row overflow-auto px-[25px] pb-[20px]">
-          <div
-            style={{
-              boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
-              backdropFilter: "blur( 0px )",
-              borderRadius: "10px",
-            }}
-            className="p-5 md:p-[35px] bg-white hover:bg-sky-600 transition hover:text-white text-sky-600 font-semibold "
-          >
-            <h2 className="text-xl md:text-3xl flex flex-col items-center md:w-[300px]">
-              <p>Customised packing and labelling</p>
-            </h2>
-          </div>
 
-          <div
-            style={{
-              boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
-              backdropFilter: "blur( 0px )",
-              borderRadius: "10px",
-            }}
-            className="p-5 md:p-[35px] bg-white hover:bg-sky-600 transition hover:text-white text-sky-600 font-semibold"
-          >
-            <h2 className="text-xl md:text-3xl flex md:mt-3 flex-col items-center md:w-[300px]">
-              <p>Quality Control</p>
-            </h2>
-          </div>
 
-          <div
-            style={{
-              boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
-              backdropFilter: "blur( 0px )",
-              borderRadius: "10px",
-            }}
-            className="p-5 md:p-[35px] bg-white hover:bg-sky-600 transition hover:text-white text-sky-600 font-semibold"
-          >
-            <h2 className="text-xl md:text-3xl flex md:mt-3 flex-col items-center md:w-[300px]">
-              <p>Technical consultation</p>
-            </h2>
-          </div>
-        </div>
+
       </div>
       <div id="certificates">
-        <h1 className="text-center text-sky-700 text-3xl font-normal underline uppercase">
+        <h1 className="text-center text-sky-700 text-3xl font-semibold underline uppercase">
           Certifications
         </h1>
         <div className="flex items-center justify-center mt-10 flex-wrap gap-12">

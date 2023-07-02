@@ -1,13 +1,20 @@
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { GoThreeBars } from "react-icons/go";
 import NavBarMobile from "./NavBarMobile";
 import { RxCross1 } from "react-icons/rx";
 import Link from "next/link";
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
-  const [showNavBar, setShowNavBar] = useState();
+  const [showNavBar, setShowNavBar] = useState(false);
+  const [currentPath, setCurrentPath] = useState("");
+  const router = useRouter();
+
+  useEffect(() => {
+    setCurrentPath(router.pathname);
+  }, [router.pathname]);
 
   const handleShowNavBar = () => {
     setShowNavBar(!showNavBar);
@@ -18,8 +25,8 @@ const Navbar = () => {
       <Head>
         <style>
           {`body {
-      overflow: ${showNavBar ? "hidden" : "auto"};
-        }`}
+            overflow: ${showNavBar ? "hidden" : "auto"};
+          }`}
         </style>
       </Head>
       <div className="relative text-sky-600 shadow-md py-[5px] ">
@@ -31,29 +38,29 @@ const Navbar = () => {
                 alt="logo"
                 width={100}
                 height={100}
-                className="ml-2 lg:w-20"
+                className="md:ml-[40px] lg:w-20"
                 priority={true}
               />
             </Link>
           </div>
           <nav className="w-full">
             <ul className="hidden lg:flex items-start justify-center gap-6">
-              <li className="text-xl font-bold cursor-pointer ">
+              <li className={`text-xl font-bold cursor-pointer ${currentPath === "/" ? "border-b-sky-600 border-b-[2.5px]" : ""}`}>
                 <Link href="/">Home</Link>
               </li>
-              <li className="text-xl font-bold cursor-pointer ">
+              <li className={`text-xl font-bold cursor-pointer ${currentPath === "/aboutUs" ? "border-b-sky-600 border-b-[2.5px]" : ""}`}>
                 <Link href="/aboutUs">About Us</Link>
               </li>
-              <li className="text-xl font-bold cursor-pointer ">
+              <li className={`text-xl font-bold cursor-pointer ${currentPath === "/products" ? "border-b-sky-600 border-b-[2.5px]" : ""}`}>
                 <Link href="/products">Products</Link>
               </li>
-              <li className="text-xl font-bold cursor-pointer ">
-                <Link href="/industries">Industries</Link>
+              <li className={`text-xl font-bold cursor-pointer ${currentPath === "/industries" ? "border-b-sky-600 border-b-[2.5px]" : ""}`}>
+                <Link href="/industries">Applications</Link>
               </li>
-              <li className="text-xl font-bold cursor-pointer ">
+              <li className={`text-xl font-bold cursor-pointer ${currentPath === "/#certificates" ? "border-b-sky-600 border-b-[2.5px]" : ""}`}>
                 <Link href="/#certificates">Certifications</Link>
               </li>
-              <li className="text-xl font-bold cursor-pointer ">
+              <li className={`text-xl font-bold cursor-pointer ${currentPath === "/contact" ? "border-b-sky-600 border-b-[2.5px]" : ""}`}>
                 <Link href="/contact">Contact Us</Link>
               </li>
             </ul>
